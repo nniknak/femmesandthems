@@ -1,21 +1,12 @@
-@font-face {
-    font-family: "blackout-midnight";
-    src: url("fonts/blackout_midnight-webfont.woff") format("woff");
-  }
-  
-  @font-face {
-    font-family: "blackout-sunrise";
-    src: url("fonts/blackout_two_am-webfont.woff") format("woff");
-  }
-  
   header{
     font:bolder;
-    text-align: center;
-    padding:1%;
+    text-align: left;
+    margin:auto;
   }
+
   body {
-      font-family: blackout-midnight, sans-serif;
-      font-size: 1.2em;
+    font-family: 'League Spartan';
+    background-color:lavenderblush;
   }
   
   body.dark {
@@ -34,7 +25,35 @@
   img{
       white-space:pre; 
   }
+
+  .carousel{
+    z-index: 1;
+  }
   
+  .squiggle1{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index: 2;
+    width:60%;
+  }
+
+  .squiggle2{
+    position:absolute;
+    left:0;
+    top:60%;
+    z-index: 2;
+    width:100%;
+  }
+
+  .flowerrider{
+    position:absolute;
+    left:75%;
+    top:-68%;
+    z-index: 3;
+    width:16%;
+  }
+
   .flyer-img, 
   .header-img,
   video,
@@ -252,6 +271,20 @@
       text-align: left;
       margin-top: 0;
       font-family: Georgia;
+  }
+
+  footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    z-index: 50;
+  }
+
+  .footericon{
+    margin:3px;
   }
   
  
