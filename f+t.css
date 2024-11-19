@@ -8,6 +8,11 @@
     src: url("fonts/blackout_two_am-webfont.woff") format("woff");
   }
   
+  header{
+    font:bolder;
+    text-align: center;
+    padding:1%;
+  }
   body {
       font-family: blackout-midnight, sans-serif;
       font-size: 1.2em;
