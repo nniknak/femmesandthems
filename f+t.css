@@ -4,29 +4,22 @@
     text-align: left;
     padding-top: 5px;
     letter-spacing: 4px;
+    padding-bottom:10px;
   }
 
   body {
     font-family: 'League Spartan';
     background-color:lavenderblush;
   }
-  
-  body.dark {
-      color:white;
-  }
-  
-
 
   main{
     max-width:100%;
-    margin-left: 5%;
-    margin-right: 5%;
   }
 
   .inner {
     text-align: center;
-    margin-left:22%;
-    margin-right: 22%;
+    margin-left:28%;
+    margin-right: 28%;
   }
   
   .topper{
@@ -42,7 +35,8 @@
     padding-top:5%;
   }
 
-  ul{
+
+  .navul{
     list-style: none;
     float:right;
     padding: -110px;
@@ -52,6 +46,7 @@
   li{
     padding-right:5px;
   }
+    */
 
   .navlink{
     color:black;
@@ -59,285 +54,104 @@
   /* maintain new lines in alt text */
   img{
       white-space:pre; 
+      vertical-align: top;
   }
 
   .carousel{
     z-index: 1;
-  }
-
-  @media (max-width:900px){
-    .squiggle1{
-        display:none;
-        visibility: hidden;
-    }
-  }
-
-  @media (min-width:720px){
-    ul{
-        display: flex;
-        flex-direction: row;
-    }
-
+    position: relative;
   }
   
-  .squiggle1{
+  #squiggle1{
     position:absolute;
     left:0;
     top:0;
-    z-index: 2;
+    z-index: 1;
     width: 60%;
   }
 
-  .squiggle2{
+  #squiggle2{
     position:absolute;
     left:0;
-    top:70%;
-    z-index: 50;
+    top:50%;
+    z-index: 2;
     width:100%;
   }
 
-  .flowerrider{
+  #flowerrider{
     position:absolute;
     left:75%;
-    top:-68%;
+    top:-54%;
     z-index: 3;
     width:16%;
   }
 
   .content{
-    position:absolute;
-    top:20%;
-    left:15%;
-    text-align:left;
-    font-size: x-large;
-    width: 55%;
-    background-color: lightyellow;
-    z-index: 2;
-  }
-
-  .leftimg{
-    padding-left:11%;
-    width:50%;
     position:relative;
+    padding-top:15px;
+    margin-bottom:40px;
+    z-index: 50;
+    padding-left:15%;
+    padding-right:15%;
   }
 
-  .flyer-img, 
-  .header-img,
-  video,
-  video[poster] {
-      display: block;
-      width: 100%;
-      line-height: 1.25em;
+  .highlight{
+    display: inline;
+    background-color: lightyellow;
+  }
 
+  .caption{
+    z-index:55;
+    padding-left:15%;
+    padding-right:15%;
+    font-size:x-largexf;
+    margin-top:-40px;
   }
-  
-  
-  main p em {
-      color: rgb(31, 176, 0);
-      font-style: normal;
+
+  .left{
+    width:45%;
+    display:inline-block;
   }
-  
-  .large-text {
-      font-size: 1.5em;
-  }
-  
-  hr {
-      border: none;
-      color:#000000;
-      background-color:#000000;
-      height:3px;
-  }
-  
-  h1 {
-      font-family: blackout-sunrise;
-      letter-spacing: -1px; 
-      font-size:3.5em;
-      line-height: 1.25em;
-   
-  }
-  
-  .inverted-font {
-      font-family: blackout-sunrise;
-  }
-  
-  h2 {
-      font-size: 2.3em;
-  }
-  ul.tailgate-list {
-      padding-left: 0;
-      list-style: none;
-      font-size: 1.7em;
-  }
-  
-  li.past-event s {
-      
-      /* color: rgb(201, 201, 201);  */
-      /* filter: grayscale(80%); */
-      /* text-decoration-color:  rgb(176, 176, 176);  */
-      text-decoration-color: black;
-  }
-  
-  .dark li.past-event s {
-      /* color: rgb(201, 201, 201);  */
-  opacity:.6;
-  text-decoration-color:  inherit;
-  text-decoration-style: wavy;
-  text-decoration-thickness: 6px; 
-  }
-  
-  .dark li.color-dovetail.past-event s {
-      /* color: rgb(201, 201, 201);  */
-  opacity: .8;
-  }
-  
-  .text-muted {
-      color: rgb(147, 147, 147);
-      font-size: .8em;
-  }
-  
-  /* li.past-event s {
-     color: rgb(98, 98, 98); 
-     text-decoration: line-through;  
-  } */
-  
-  a.twitter-link {
-      color: rgb(30, 154, 238)    
-  }
-  
-  a.insta-link {
-      color: rgb(215, 58, 95)    
-  }
-  
-  a.strava-link {
-      color: rgb(252, 82, 2)    
-  }
-  
-  .color-green {
-     color: rgb(31, 176, 0); 
-  }
-  .color-guardians {
-      color: #114f;
-  }
-  
-  .dark .color-guardians {
-      color: #cd001e; 
-  }
-  
-  .color-angels {
-      color: #c10f;
-  }
-  
-  .dark .color-angels {
-      color: #862633;
-  }
-  
-  .color-rangers {
-      color: #026f;
-  }
-  
-  .dark .color-rangers {
-      color: #C0111F;
-  }
-  
-  .color-blue-jays {
-      color: #134A8E;
-  }
-  
-  .dark .color-blue-jays {
-      color: #116ee0;
-  }
-  
-  .color-cubs {
-      color: #33ef;
-  }
-  
-  .color-yankees {
-      color: rgb(10, 10, 47);
-  }
-  
-  .dark .color-yankees {
-      color: #C4CED3;
-  }
-  
-  .color-mariners {
-      color: #055f;
-  }
-  
-  .color-royals {
-      color: rgb(28, 133, 187);
-  }
-  
-  .color-d-backs {
-      color: rgb(145, 38, 39);
-  }
-  
-  .color-nationals {
-      color: #AB0003;
-  }
-  
-  .color-astros {
-      color: rgb(244, 145, 30);
-  }
-  
-  .color-marz {
-      color: rgb(255, 40, 0);
-  }
-  
-  .color-dovetail {
-      color: #ffb718;
-  }
-  
-  .color-tigers {
-      color: #FA4616;
-  }
-  .color-purple {
-      color: #DF00FF;
-  }
-  .color-light-purple {
-      color: #CE58F5;
-  }
-  .color-lightning {
-      color: color(display-p3 0.941 0.993 0.404);
-  }
-  .color-lightning-green {
-      color: color(display-p3 0.553 0.808 0.776);
-  }
-  .color-dodgers, .color-twins{
-      color: rgb(0, 121, 206);
-  }
-  
-  .color-twins {
-      color: #D31145;
-  }
-  
-  .color-pink {
-      color:rgb(455,0,128);
+
+  .right{
+    width: 45%;
+    margin-right:10px;
+    display:inline-block;
   }
 
   
-  /* div.inverted {
-      background-color: black;
-      width: 100%;
-      padding: 25px;
-  } */
-  
-  /* FAQ */
-  
-  div.faq h4 {
-      text-align:left;
-      font-size: 1.5em;
-      color: rgb(31, 176, 0); 
-      margin-bottom:0;
+  @media (max-width:900px){
+    #squiggle1{
+        display:none;
+        visibility: hidden;
+    }
+    #flowerrider{
+        display:none;
+        visibility:hidden;
+    }
+    .left{
+        display:block;
+        width:100%;
+    }
+    .right{
+        display:block;
+        width:100%;
+    }
   }
-  
-  div.faq h4 span.black {
-      color: black;
-  }
-  
-  div.faq p, div.faq ul {
-      text-align: left;
-      margin-top: 0;
-      font-family: Georgia;
+
+  @media (min-width:720px){
+    .navul{
+        display: flex;
+        flex-direction: row;
+    }
+    .content{
+        font-size:large;
+    }
+
+    p{
+        font-size: x-large;
+    }
+
   }
 
   footer{
@@ -348,6 +162,7 @@
     background-color: white;
     text-align: center;
     z-index: 50;
+    margin-top:5%;
   }
 
   .footericon{
