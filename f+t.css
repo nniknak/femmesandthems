@@ -42,6 +42,8 @@
     float:right;
     padding: -110px;
     justify-content: flex-end;
+    display: block;
+    background-color: #dddddd;
   }
 
   li{
